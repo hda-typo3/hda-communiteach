@@ -1,0 +1,152 @@
+.tx-hda-communiteach {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Prevents multiselect dropdowns to grow */
+
+.tx-hda-communiteach .select2-container {
+    overflow: hidden;
+}
+
+.tx-hda-communiteach .select2-selection__rendered {
+    width: auto;
+    float: left;
+}
+.tx-hda-communiteach .select2-search {
+    float: left;
+}
+
+.tx-hda-communiteach .select2-search * {
+    display: inline-block !important;
+    width: auto;
+}
+
+.tx-hda-communiteach .select2-container--bootstrap-5 .select2-selection--multiple .select2-search {
+    width: auto;
+}
+
+.tx-hda-communiteach .select2-selection__choice__display {
+    font-size: .9rem;
+    white-space: nowrap;
+    /*
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70px;
+    */
+}
+
+/* filter form styling */
+
+.tx-hda-communiteach form.filter .input-group i {
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+}
+
+.tx-hda-communiteach form.filter .btn-primary {
+    color: white;
+    background-color: #346097;
+    border-color: #346097;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.tx-hda-communiteach form.filter .input-group textarea.select2-search__field {
+    font-size: 1rem;
+    padding: 0.05rem 0.2rem;
+}
+
+.tx-hda-communiteach form.filter .input-group li.select2-selection__choice {
+    padding: 0.15rem 0.65rem !important;
+}
+
+/* news teaser styling */
+
+.tx-hda-communiteach section.list .news a {
+    color: unset;
+}
+
+.tx-hda-communiteach section.list .news .teaserDate, .tx-hda-communiteach section.list .news .specialist-cluster, .tx-hda-communiteach section.list .news h3 {
+    color: #346097;
+} 
+
+.tx-hda-communiteach section.list .news p {
+    color: #333333;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.tx-hda-communiteach section.list .news p.subheadline { 
+    margin-top: 0.5rem; 
+    margin-bottom: -0.5rem;
+}
+
+.tx-hda-communiteach section.list .news h3 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.tx-hda-communiteach section.list .news h4 {
+    font-size: 1.25rem;
+}
+
+.tx-hda-communiteach section.list .news span.badge {
+    display: inline-block;
+    white-space: nowrap;
+    color: #6A6A6A;
+    font-weight: 600;
+    background-color: #FAFAFA;
+    border: 1px solid #A9A9A9;
+    border-radius: 6px;
+    padding: 10px;
+    height: 44px;
+    margin-bottom: 10px;
+    margin-right: 8px; 
+}
+
+.tx-hda-communiteach section.list .news {
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tx-hda-communiteach section.list .news > div {
+    margin-bottom: 1.5rem;
+}
+
+.tx-hda-communiteach section.list .news.frame-line {
+    border-top: 1px solid #333;
+}
+
+/* Copyright badge for images */
+
+.tx-hda-communiteach .newsimage {
+    position: relative;
+}
+.tx-hda-communiteach .newsimage .copyright {
+    position: absolute; right: 0; bottom: 0;
+    background-color: rgba(255,255,255,.5);
+    padding: 4px 12px;
+    font-size: 0.8rem;
+}
+
+html[color-mode="dark"] .tx-hda-communiteach section.list .news span.teaserDate, html[color-mode="dark"] .tx-hda-communiteach section.list .news span.specialist-cluster, html[color-mode="dark"] .tx-hda-communiteach section.list .news h3 {
+    color:#c1e1fb !important;
+}
+
+html[color-mode="dark"] .tx-hda-communiteach section.list .news .article {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+html[color-mode="dark"] .tx-hda-communiteach section.list .news p, html[color-mode="dark"] .tx-hda-communiteach section.form .btn-primary, html[color-mode="dark"] .tx-hda-communiteach section.form small {
+    color: #fff !important;
+}
+
+html[color-mode="dark"] .tx-hda-communiteach section.list .news.frame-line {
+    border-top: 1px solid #346097;
+    border-bottom: 1px solid #346097;
+}

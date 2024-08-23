@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:hda_communiteach/Resources/Private/Language/locallang.xlf" date="2023-11-29T10:38:39Z" product-name="hda_communiteach">
+		<header/>
+		<body>
+			<trans-unit id="searchTerm">
+				<source>Search Term</source>
+			</trans-unit>
+			<trans-unit id="specialistCluster">
+                <source>Specialist Cluster</source>
+            </trans-unit>
+            <trans-unit id="eventFormats">
+                <source>Event Formats</source>
+            </trans-unit>
+            <trans-unit id="eventModes">
+                <source>Event Modes</source>
+            </trans-unit>
+            <trans-unit id="didacticConcepts">
+                <source>Didactic Concepts</source>
+            </trans-unit>
+            <trans-unit id="multiSelectionPossible">
+                <source>Multiple selection is possible.</source>
+            </trans-unit>
+            <trans-unit id="clearFilter">
+                <source>Clear filter</source>
+            </trans-unit>
+            <trans-unit id="filter">
+                <source>Filter</source>
+            </trans-unit>
+            <trans-unit id="details">
+                <source>Details</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

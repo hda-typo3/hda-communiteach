@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:hda_communiteach/Resources/Private/Language/locallang_csh_tx_hdacommuniteach_domain_model_lectureformat.xlf" date="2023-11-27T17:58:14Z" product-name="hda_communiteach">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="icon.description" resname="icon.description">
+				<source>Icon</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

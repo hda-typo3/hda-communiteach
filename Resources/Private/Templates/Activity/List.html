@@ -1,0 +1,118 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Activity:
+          List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+   
+    <section class="form">
+        <f:form method="get" action="list" class="filter">
+            <div class="container">
+                <div class="row">
+                    <div class="col">    
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            <f:form.textfield class="form-control" name="searchTerm" id="searchTerm" value="{arguments.searchTerm}" placeholder="{f:translate(key : 'searchTerm')}" tabindex="0" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2">              
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-th"></i></span>
+                            <f:form.select class="form-select" data="{placeholder : '{f:translate(key : \'specialistCluster\')}'}" name="specialistClusters" id="specialistClusters" options="{specialistClusters}" value="{arguments.specialistClusters}" multiple="TRUE" optionValueField="uid" optionLabelField="title" tabindex="1" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-shapes"></i></span>
+                            <f:form.select class="form-select" data="{placeholder : '{f:translate(key : \'eventFormats\')}'}" name="eventFormats" id="eventFormats" options="{eventFormats}" value="{arguments.eventFormats}" multiple="TRUE" optionValueField="uid" optionLabelField="title" tabindex="2" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-chalkboard-teacher"></i></span>
+                            <f:form.select class="form-select" data="{placeholder : '{f:translate(key : \'eventModes\')}'}" name="eventModes" id="eventModes" options="{eventModes}" value="{arguments.eventModes}" multiple="TRUE" optionValueField="uid" optionLabelField="title" tabindex="3" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fas fa-lightbulb"></i></span>
+                            <f:form.select class="form-select" data="{placeholder : '{f:translate(key : \'didacticConcepts\')}'}" name="didacticConcepts" id="didacticConcepts" options="{didacticConcepts}" value="{arguments.didacticConcepts}" multiple="TRUE" optionValueField="uid" optionLabelField="title" tabindex="4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <small class="form-text text-muted"><f:translate key="multiSelectionPossible" /></small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <f:link.page class="btn btn-primary" tabindex="4"><f:translate key="clearFilter" /></f:link.page>
+                    </div>
+                    <div class="col">
+                        <div class="float-end">
+                            <f:form.submit class="btn btn-primary" value="{f:translate(key : 'filter')}" tabindex="5" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </f:form>
+    </section>
+
+    <section class="list">
+        <div class="news bigimage threeItemsStat w-auto row frame-line">
+            <f:for each="{activities}" as="activity">
+                <div class="col-md-4">
+                    <f:link.typolink parameter="{activity.link}">
+                        <div class="article h-100 pb-3">
+                            <f:if condition="{activity.image}">
+                                <div class="newsimage d-none d-sm-block d-sm-none d-md-block">
+                                    <f:image image="{activity.image}" width="1000c" height="562c" alt="{activity.image.originalResource.alternative}" title="{activity.image.originalResource.alternative}" crop="{activity.image.crop}" />
+                                    <f:if condition="{activity.image.originalResource.properties.copyright}">
+                                        <span class="copyright">{activity.image.originalResource.properties.copyright}</span>
+                                    </f:if>
+                                </div>
+                            </f:if>
+                            <div class="teasertext col-12">
+                                <span class="teaserDate mt-1 mb-2">{activity.publicationDate -> f:format.date(format : 'd.m.Y')}</span>
+                                <f:for each="{activity.specialistClusters}" as="specialistCluster" iteration="specialistClusterIterator">
+                                    &nbsp;<span class="specialist-cluster"><f:if condition="{specialistClusterIterator.isFirst}"><i class="fas fa-th"></i> </f:if>{specialistCluster.abbreviation}<f:if condition="{specialistClusterIterator.isLast} == 0">&nbsp;</f:if></span>
+                                </f:for>
+                                <h3>{activity.title}</h3>
+                                <f:if condition="{activity.subtitle}">
+                                    <p class="subheadline"><b>{activity.subtitle}</b></p>
+                                </f:if>
+                                <p><f:format.crop maxCharacters="{settings.maximumTeaserCharacters}" respectWordBoundaries="true" append="...">{activity.teaser}</f:format.crop></p>
+                                <br>
+                                <f:if condition="{activity.eventMode}">
+                                    <span class="badge event-mode"><i class="fas fa-chalkboard-teacher"></i> {activity.eventMode.title}</span>
+                                </f:if>
+                                <f:for each="{activity.didacticConcepts}" as="didacticConcept">
+                                    <span class="badge didactic-concept"><i class="fas fa-lightbulb"></i> {didacticConcept.title}</span>
+                                </f:for>
+                                <f:for each="{activity.eventFormats}" as="eventFormat">
+                                    <span class="badge event-mode"><i class="fas fa-shapes"></i> {eventFormat.title}</span>
+                                </f:for>
+                                <span class="moreNews"><f:translate key="details" /></span>
+                            </div>
+                        </div>
+                    </f:link.typolink>
+                </div>
+            </f:for>
+        </div>
+    </section>
+
+</f:section>
+</html>

@@ -1,0 +1,36 @@
+plugin.tx_hdacommuniteach_activitylist {
+    view {
+        templateRootPaths.0 = EXT:hda_communiteach/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_hdacommuniteach.view.templateRootPath}
+        partialRootPaths.0 = EXT:hda_communiteach/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_hdacommuniteach.view.partialRootPath}
+        layoutRootPaths.0 = EXT:hda_communiteach/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_hdacommuniteach.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_hdacommuniteach.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+        maximumTeaserCharacters = 320
+    }
+}
+
+page.includeCSS.fontawesome = https://use.fontawesome.com/releases/v5.5.0/css/all.css
+page.includeCSS.fontawesome.external = 1
+page.includeCSS.select2 = EXT:hda_communiteach/Resources/Public/Css/select2.min.css
+page.includeCSS.select2bstheme = EXT:hda_communiteach/Resources/Public/Css/select2-bootstrap-5-theme.min.css
+page.includeCSS.hdacommuniteach = EXT:hda_communiteach/Resources/Public/Css/communiteach.css
+
+page.includeJSFooterlibs.bootstrapdbundle = EXT:hda_communiteach/Resources/Public/JavaScript/bootstrap.bundle.min.js
+page.includeJSFooterlibs.select2 = EXT:hda_communiteach/Resources/Public/JavaScript/select2.min.js
+page.includeJSFooterlibs.select2_de = EXT:hda_communiteach/Resources/Public/JavaScript/select2.de.min.js
+page.includeJSFooterlibs.communiteach = EXT:hda_communiteach/Resources/Public/JavaScript/communiteach.js

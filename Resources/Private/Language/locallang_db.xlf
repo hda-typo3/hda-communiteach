@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:hda_communiteach/Resources/Private/Language/locallang_db.xlf" date="2023-11-29T10:38:39Z" product-name="hda_communiteach">
+		<header/>
+		<body>
+			<trans-unit id="tx_hdacommuniteach_domain_model_specialistcluster" resname="tx_hdacommuniteach_domain_model_specialistcluster">
+				<source>Fachcluster</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_specialistcluster.title" resname="tx_hdacommuniteach_domain_model_specialistcluster.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_specialistcluster.abbreviation" resname="tx_hdacommuniteach_domain_model_specialistcluster.abbreviation">
+                <source>Abbreviation</source>
+            </trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_specialistcluster.icon" resname="tx_hdacommuniteach_domain_model_specialistcluster.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_eventformat" resname="tx_hdacommuniteach_domain_model_eventformat">
+				<source>Veranstaltungsformat</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_eventformat.title" resname="tx_hdacommuniteach_domain_model_eventformat.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_eventformat.icon" resname="tx_hdacommuniteach_domain_model_eventformat.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_eventmode" resname="tx_hdacommuniteach_domain_model_eventmode">
+				<source>Modus</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_eventmode.title" resname="tx_hdacommuniteach_domain_model_eventmode.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_eventmode.icon" resname="tx_hdacommuniteach_domain_model_eventmode.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_didacticconcept" resname="tx_hdacommuniteach_domain_model_didacticconcept">
+				<source>Didaktisches Konzept</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_didacticconcept.title" resname="tx_hdacommuniteach_domain_model_didacticconcept.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_didacticconcept.icon" resname="tx_hdacommuniteach_domain_model_didacticconcept.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity" resname="tx_hdacommuniteach_domain_model_activity">
+				<source>Activity</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.title" resname="tx_hdacommuniteach_domain_model_activity.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.subtitle" resname="tx_hdacommuniteach_domain_model_activity.subtitle">
+                <source>Subtitle</source>
+            </trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.teaser" resname="tx_hdacommuniteach_domain_model_activity.teaser">
+				<source>Teaser</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.publication_date" resname="tx_hdacommuniteach_domain_model_activity.publication_date">
+				<source>Publication Date</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.link" resname="tx_hdacommuniteach_domain_model_activity.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.image" resname="tx_hdacommuniteach_domain_model_activity.image">
+                <source>Image</source>
+            </trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.didactic_concepts" resname="tx_hdacommuniteach_domain_model_activity.didactic_concepts">
+				<source>Didaktische Konzepte</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.event_formats" resname="tx_hdacommuniteach_domain_model_activity.event_formats">
+				<source>Veranstaltungsformate</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.event_mode" resname="tx_hdacommuniteach_domain_model_activity.event_mode">
+				<source>Modus</source>
+			</trans-unit>
+			<trans-unit id="tx_hdacommuniteach_domain_model_activity.specialist_clusters" resname="tx_hdacommuniteach_domain_model_activity.specialist_clusters">
+				<source>Fachcluster</source>
+			</trans-unit>
+			<trans-unit id="tx_hda_communiteach_activitylist.name" resname="tx_hda_communiteach_activitylist.name">
+				<source>Activity List</source>
+			</trans-unit>
+			<trans-unit id="tx_hda_communiteach_activitylist.description" resname="tx_hda_communiteach_activitylist.description">
+				<source>Activity List</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

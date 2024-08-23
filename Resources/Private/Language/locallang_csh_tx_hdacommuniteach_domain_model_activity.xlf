@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:hda_communiteach/Resources/Private/Language/locallang_csh_tx_hdacommuniteach_domain_model_activity.xlf" date="2023-11-29T10:38:39Z" product-name="hda_communiteach">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="teaser.description" resname="teaser.description">
+				<source>Teaser</source>
+			</trans-unit>
+			<trans-unit id="publication_date.description" resname="publication_date.description">
+				<source>Publication Date</source>
+			</trans-unit>
+			<trans-unit id="link.description" resname="link.description">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="didactic_concepts.description" resname="didactic_concepts.description">
+				<source>Didactic Concepts</source>
+			</trans-unit>
+			<trans-unit id="event_formats.description" resname="event_formats.description">
+				<source>Event Formats</source>
+			</trans-unit>
+			<trans-unit id="event_mode.description" resname="event_mode.description">
+				<source>Event Mode</source>
+			</trans-unit>
+			<trans-unit id="specialist_cluster.description" resname="specialist_cluster.description">
+				<source>Specialist Cluster</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
